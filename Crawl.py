@@ -32,8 +32,8 @@ def __getpage(url):
     try:
         response = urlopen(req, timeout=60)
     except:
-        return "error"
-        pass
+        return "error"#已经结束了，后面不会运行
+        
     else:
         page = response.read()
         return page
